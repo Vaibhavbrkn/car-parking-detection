@@ -1,0 +1,27 @@
+Model Used:
+YOLOv4 Implemented in Tensorflow 2.0.
+
+Getting Started:
+# TensorFlow CPU
+pip install -r requirements.txt
+
+# TensorFlow GPU
+pip install -r requirements-gpu.txt
+
+Downloads:
+
+download yolov4 and yolov4 tiny model and paste it in the checkpoints folder.
+
+YOLOV4 tiny :
+https://drive.google.com/drive/folders/18DpgwfY9ghG51YsylWXa1TCr8U-B78fQ?usp=sharing
+
+YOLOV4
+https://drive.google.com/drive/folders/1_p8VG5Z-lpVQYkaDT2UYox1RWr3KsAlK?usp=sharing
+
+Command :
+FOR ORIGINAL MODEL:
+python final_model.py --weights ./checkpoints/yolov4-416 --size 416 --model yolov4 --video ./data/video/vid03.mp4 --output ./detections/results.avi
+
+FOR TINY MODEL:
+python final_model.py --weights ./checkpoints/yolov4-tiny-416 --size 416 --model yolov4 --video ./data/video/vid03.mp4 --output ./detections/results.avi
+
